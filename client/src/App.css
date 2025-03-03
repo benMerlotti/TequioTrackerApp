@@ -1,0 +1,273 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.container
+{
+  background-color: #070713;
+  color: white
+}
+
+.card{
+  background-color: #070713 !important;
+  color: white !important;
+}
+
+.list-group{
+  background-color: #070713 !important;
+  color: white !important;
+}
+
+.list-group-item{
+  background-color: #070713 !important;
+  color: white !important;
+}
+
+.dropdown-menu {
+  background-color: #070713 !important;
+  border-color: white !important;
+  color: white !important;
+}
+
+.dropdown-item {
+  color: white !important; /* Default text color */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover state for dropdown items */
+.dropdown-item:hover {
+  background-color: #14141e!important; /* Hover background color */
+}
+
+
+.form-control {
+  background-color: #070713 !important;
+  color: white !important;
+}
+
+.form-control::placeholder {
+  color: rgb(255, 255, 255) !important;
+  opacity: .35 !important;
+}
+
+.form-select {
+  background-color: #070713 !important;
+  color: white !important;
+}
+
+.input-group-text {
+  background-color: #070713 !important;
+  color: white !important;
+}
+
+/* customerList.css */
+
+/* General table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+tbody td {
+  text-align: left;
+  border-bottom: 1px solid #1d1d2f;
+  transition: background-color 0.22s ease;
+}
+
+/* Hover effect for table rows */
+tbody tr:hover td {
+  background-color: #14141e;
+  color:#ffcc00;
+}
+
+/* Column-specific hover effect */
+tbody td:hover {
+  background-color: #14141e;
+  color:#ffcc00;
+}
+
+.bi-three-dots {
+  color: white; /* Or another color for testing */
+  font-size: 1.5rem;
+}
+
+.btn-light {
+  background-color: transparent !important;
+  box-shadow: none !important; /* Removes any box shadow */
+  border: none !important; /* Ensures no border is applied */
+}
+
+/* Flex container for input and search icon */
+.search-container {
+  display: flex;
+  color: white !important;
+  align-items: center;
+  max-width: 300px; /* Adjust width */
+  margin-right: auto; /* Align container to the left */
+  background-color: #070713; /* Background for container */
+}
+
+/* Style the search icon */
+.search-icon {
+  margin-left: 10px;
+  margin-right: 10px; /* Space between the edge and the icon */
+  color: #ffffff; /* Light gray */
+  font-size: 1.2rem; /* Adjust size of the icon */
+}
+
+/* Style the search input */
+.search-input {
+  flex: 1; /* Input takes remaining space */
+  background-color: transparent !important; /* Transparent background */
+  color: #ffffff !important; /* Light gray text */
+  border: none; /* Remove inner border */
+  outline: none; /* Remove focus outline */
+  padding: 0.5rem; /* Padding inside the input */
+  font-size: 0.9rem; /* Font size adjustment */
+  border-radius: 0; /* Removes border radius inside container */
+}
+
+/* Optional: Remove background or outline on focus */
+.search-input:focus {
+  box-shadow: none;
+}
+
+/* Custom NavLink Styling */
+.custom-nav-link {
+  color: white !important; /* Default color */
+  transition: color 0.3s ease !important;
+  text-decoration: none !important; /* Remove underline */
+}
+
+.custom-nav-link:hover {
+  color: #ffcc00 !important; /* Light yellow on hover */
+}
+
+.custom-nav-link.active {
+  color: #ffcc00 !important; /* Active state */
+}
+
+.nav-logged-in-user{
+  color: white !important;
+  margin-right: 1rem;
+}
+
+.total-sales{
+  color: #ffcc00 !important
+}
+
+.custom-toggler {
+  background: none; /* Remove default toggler styles */
+  border: none;
+}
+
+.custom-toggler .fa-bars {
+  font-size: 1.5rem; /* Adjust icon size */
+}
+
+.last-sale{
+  color: #ffcc00 !important
+}
+
+.product-card {
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.product-details-card.no-hover:hover {
+  transform: none !important; /* Disable scaling */
+  background-color: inherit !important; /* Retain default background color */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Slightly grow the card */
+  background-color: #f1f1f1; /* Lighten the background color */
+}
+
+.fade-in {
+  animation: fadeIn 3s ease-in-out;
+}
+
+.admin-dashboard .dashboard-content {
+  flex: 1;
+  padding: 1rem;
+  margin-top: 56px; /* Offset for NavBar height */
+  overflow-y: auto;
+}
+
+.customer-options{
+  font-size: .8rem;
+  border: 1px solid white;
+  padding: .6rem;
+  border-radius: 50px;
+}
+
+.customer-options:hover{
+  color:#070713;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: color 0.8s ease !important;
+  transition: background-color 0.8s ease !important;
+}
+
+.customer-options.active-tab {
+  background-color: white;
+  color: #070713;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
